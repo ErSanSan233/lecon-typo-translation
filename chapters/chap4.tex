@@ -44,3 +44,50 @@
 \end{itemize}
 
 \section{入口和定义}
+
+在目录或参考手册这样的文档中，推荐使用粗体来“牵制”视线。例如：
+
+\begin{quote}
+    并非所有参考资料的排版都相同。事实上，参考资料的排版取决于其性质：
+
+    \textbf{图书：}书名需要使用意大利体，其余部分，包括（且必须包括）作者名、出版商、出版地点、出版日期，使用罗马体。
+    
+    \textbf{文章：}作者名使用罗马体；文章标题使用罗马体且置于引号间；期刊标题使用意大利体；其余部分，如卷号、序号、页码等，使用罗马体
+
+    \textbf{论文：}与图书相同，但要将出版商替换为大学名。
+
+    \textbf{等等。}
+\end{quote}
+
+定义可以使用意大利体或粗体。使用意大利体显得更审慎些，会更好地融入正文。使用粗体则更容易被识别（尤其是末尾用于跳转到定义所在页码的索引），但更吸引眼球也意味着会破坏线性阅读的体验。例如：
+
+\begin{quote}
+    Le système est organisé autour de couches : la première couche, autour du matériel, constitue ce qu’on appelle le \emph{noyau} du système. C’est lui qui réalise les \emph{échanges avec les périphériques} et qui gère les tâches (y compris la mémoire).
+
+    Le système est organisé autour de couches : la première couche, autour du matériel, constitue ce qu’on appelle le \textbf{noyau} du système. C’est lui qui réalise les \textbf{échanges avec les périphériques} et qui gère les tâches (y compris la mémoire).
+
+    \begin{bil}
+        系统是围绕层组织的：围绕硬件的第一层构成了所谓的系统\emph{核心}。它执行\emph{与设备的交换}并管理任务（包括内存）。
+
+        系统是围绕层组织的：围绕硬件的第一层构成了所谓的系统\textbf{核心}。它执行\textbf{与设备的交换}并管理任务（包括内存）。
+    \end{bil}
+\end{quote}
+
+\section{计算机术语}
+
+Algol 60的报告开创了在程序中加粗关键字的习惯，然而，使用意大利体本应是更好的做法。然而，习惯已经养成了，现在说这些太晚了！然而，我还是建议不要在指令、说明等文本中过度使用加粗字符。请比较以下两个表述：
+
+\begin{quote}
+    Cette fonction est plus difficile à mettre en œuvre. Nous créons deux types d’attributs \textbf{contact\_haut} et \textbf{contact\_bas} pour réaliser cette fonction \textbf{poser\_sur}. Comme nos primitives sont limitées au cube, à la sphère et au cylindre, \textbf{poser\_sur} a en fait trois possibilités...
+
+    Cette fonction est plus difficile à mettre en œuvre. Nous créons deux types d’attributs \emph{contact\_haut} et \emph{contact\_bas} pour réaliser cette fonction \emph{poser\_sur}. Comme nos primitives sont limitées au cube, à la sphère et au cylindre, \emph{poser\_sur} a en fait trois possibilités...
+
+    \begin{bil}
+        此函数更难实现。我们将创建两个属性\textbf{contact\_haut}和\textbf{contact\_bas}来实现此\textbf{poser\_sur}函数。由于原函数限制在正方体、球体及圆柱上，\textbf{poser\_sur}实际由三种情况……
+
+        此函数更难实现。我们将创建两个属性\emph{contact\_haut}和\emph{contact\_bas}来实现此\emph{poser\_sur}函数。由于原函数限制在正方体、球体及圆柱上，\emph{poser\_sur}实际上有三种情况……
+    \end{bil}
+\end{quote}
+
+\section{术语}
+
