@@ -1,1 +1,123 @@
 \chapter{标点符号}
+
+作者在文章中输入标点符号的方式既是排印差错（如留白错误）的一大来源，也是编辑差错（如逗号的作用不明）的一大来源。
+
+\section{标点符号和留白}
+
+排印不是将符号放置在页面上的艺术，而是处理符号周边空白的艺术。精细的排印过程中，空白有很多种处理方式。在使用计算机排印的出版物中，可以近似地将空白分为两种，但也有必要明确区分这两种空白。
+
+\subsection{空格}
+
+我们考虑将空格分为两种（在强调一遍，排印术语espace为阴性名词；见%TODO
+）
+
+\begin{description}
+    \item[可变空格]（此处记为\verb*| |）这是单词间的常规空格。之所以称为可变，是因为系统可以轻微地改变它的宽度，以适应行长。行末的可变空格会被删除。\\
+    在几乎所有系统中，按“空格键”都可以输入这种空格。
+    \item[不可断空格]（此处记为\verb|_|）这种空格有两个作用：
+    \begin{itemize}
+        \item 它的宽度通常比可变空格要小
+            \footnote{这就要靠排印师的精细操作了，这里说的也是近似的情况（反例：冒号前的空格其实是是一个普通的不可断空格）。}
+        ，
+        \item 它永远不会被系统删除，系统也永远不会在它所在的地方断行（这也是其称为不可断的原因 ）。\\
+        这种空格要么通过特殊按键（如在Mac上按住\emph{Alt}和空格键）输入，要么通过代码输入（如\LaTeX 中使用波浪号）。一些排版引擎（如\LaTeX 、MS Word等）倾向于自动将必要的空格（如双标点前的空格）替换为不可断空格。
+    \end{itemize}
+\end{description}
+
+\subsection{与标点搭配的是什么空格？}
+
+表\ref{tab1} 给出了法文中这些空格的作用
+    \footnote{盎撒人有着一套不同的系统：标点符号前不加空格，且句末的空格比法文中更宽。无论是完整的文章还是引用一句话，都应当尊重原文种的用法。例如，下面这条引用的写法是正确的（注意，冒号和问号前没有空格）：\emph{Hypertext: where are the big systems?}}
+。
+
+需要注意以下几点：
+
+\begin{table}
+    \begin{center}
+        \begin{tabular}{|l|l|}
+            \hline
+            句末 & mmm.\verb*| |mmm\\
+            \hline
+            缩写后 & mmm.\verb|_|mmm\\
+            \hline
+            逗号 & mmm,\verb*| |mmm\\
+            \hline
+            冒号 & mmm\verb|_|:\verb*| |mmm\\
+            \hline
+            分号 & mmm\verb|_|;\verb*| |mmm\\
+            \hline
+            感叹号 & mmm\verb|_|!\verb*| |mmm\\
+            \hline
+            问号 & mmm\verb|_|?\verb*| |mmm\\
+            \hline
+            连字符 & mmm-mmm\\
+            \hline
+            列表首的横线 & --\verb|_|mmm\\
+            \hline
+            左括号 & mmm\verb*| |(mmm\\
+            右括号 & mmm)\verb*| |mmm\\
+            \hline
+            左引号 & mmm\verb*| |«\verb|_|mmm\\
+            右引号 & mmm\verb|_|»\verb*| |mmm\\
+            \hline
+            插入语开始 & mmm\verb*| |---\verb|_|mmm\\
+            插入语结束 & mmm\verb|_|---\verb*| |mmm\\
+            \hline
+            省略号 & mmm...\\
+            & mmm,\verb|_|...\\
+            \hline
+        \end{tabular}
+        \caption{插入标点符号。}
+        \label{tab1}
+        “m”表示任意字母，“\verb*| |”表示可变空格，“\verb|_|”表示不可断空格。
+    \end{center}
+\end{table}
+
+\begin{table}
+    \begin{center}
+        \begin{tabular}{|l|||l|l|}
+            \hline
+            正确写法 & 错误写法 & 改正\\
+            \hline
+            ?, & ?. & ?\\
+            !, & !. & !\\
+            N., & N.. & N.\\
+            etc., & etc.. & etc.\\
+            & etc... & etc.\\
+            & etc.... & etc. \\
+            & ---. & .\\
+            m, ... & m.... & m...\\
+            m..., & m.... & m...\\
+            \hline
+        \end{tabular}
+        \caption{对比逗号，使用句号时会出现收缩现象}
+        \label{tab2}
+    \end{center}
+\end{table}
+
+\begin{itemize}
+    \item 句末点号标志着句子立刻结束，后面加可变空格。表\ref{tab2} 给出了句末点号前带有其他标点时的收缩现象。
+    \item 表示缩写的点几乎总是紧随一个不可断空格，因为缩写的后面几乎总是紧跟不能分开的信息（见\ref{sec5.1.3} 小节）。而对于\textsc{Sncf}这样的首字母缩略词
+    \footnote{当些那些不是首字母缩略词的词，比如ISO从来就不是\emph{International Standard Organization}的意思。}
+    ，没有加点的写法有些无聊，但如果我们加上点，则只在最后加上一个（可变）空格，其他地方不加空格：Les T.G.V.\verb*| |de la S.N.C.F.\verb*| |sont...（S.N.C.F.\verb*| |的T.G.V.\verb*| |是……）
+    \item 缩写点后面的标点符号通常保留（见表\ref{tab2} ），但涉及句点或省略号时，则需要删除前一个点。例如（注意两个F后面的缩写点不见了）：
+    \begin{quote}
+        Citons la C.E.E., la C.I.A. et l’E.D.F... Sans oublier les S.D.F. Ainsi...
+
+        \begin{bil}
+            引用C.E.E.、C.I.A.和E.D.F.……但不要忘了S.D.F.。这样一来……
+        \end{bil}
+    \end{quote}
+    \item \emph{et cætera}的缩写是“etc.”，不是“etc...”或“etc. etc.”，而这两种错误很常见。参见表\ref{tab2} 的收缩现象。此外，应当尽力避免etc.出现在行首。因此，推荐它的前面永远使用不可断空格：“\verb|_|etc.”。在\ref{sec5.2.4} 小节我们会看到，正常情况下，该空格前面还需要一个逗号。
+    \item 省略号永远是三个点（实际上，应当使用一个独立的排印学符号“…”，由三个点组成，且中间带有间距，而并不是连续输入三个句点“...”）；它会与句点或省略号混淆（见表\ref{tab2} ）。
+    \item 组成插入语的横杠如果处于句末，则会跟句点重复。因此，不应当写“ ... normalisation --- rappelons que \textsc{Sgml} est issu de \textsc{Gml} ---. La...”，应当这样写：
+    \begin{quote}
+        ... normalisation --- rappelons que \textsc{Sgml} est issu de \textsc{Gml}. La...
+        
+        \begin{bil}
+            ……标准化——请记住，\textsc{Sgml} 源于\textsc{Gml}。那……
+        \end{bil}
+    \end{quote}
+\end{itemize}
+
+\subsection{不可断空格的其他作用}
