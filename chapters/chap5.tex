@@ -121,3 +121,148 @@
 \end{itemize}
 
 \subsection{不可断空格的其他作用}
+
+出于阅读节奏的考量，文本中经常有两个元素不能分开的情况。为了避免在它们中间断行，可以使用不可断空格。
+
+举例如下：
+
+\begin{quote}
+    \begin{tabular}{lll}
+        \textbf{错误写法：} & ... le langage défini par N. & <N.\verb*+ +Bourbaki> \\
+        & Bourbaki, ... & \\
+        \textbf{正确写法：} & ... le langage défini par & <N.\verb|_|Bourbaki>\\
+        & N. Bourbaki, ... & \\
+    \end{tabular}
+
+    \begin{bil}
+        ……由N. Bourbaki定义的语言……
+    \end{bil}
+\end{quote}
+
+\paragraph*{词间间隔} 处于可理解程度的充分考量，一些词或符号的中间不能断行，这种情况下，就会用到不可断空格。其主要情况如下（此处“\verb|_|”仍然代表不可断空格）：
+
+\begin{itemize}
+    \item 在首字母缩略词和后面紧随的词之间，例如：M$^{\rm me}$\verb|_|Hugo、D.\verb|_|Knuth、le R.P.\verb|_|Durand；
+    \item 在数字和其后用于确定其数量的词之间，例如：14\verb|_|francs（14法郎）、2\verb|_|€、1\verb|_|A、1\verb|_|ampère（1安培）、t.\verb|_|\textsc{vii}（卷\textsc{vii}）、art.\verb|_|237（第237条）、fig.\verb|_|3（图3）、Louis\verb|_|\textsc{xiv}（路易十四）、pages\verb|_|23 à\verb|_|25（23～25~页）、23\verb|_|novembre\verb|_|1990（1990年11月23日）、98\verb|_|\%；
+    \item 数字千分空：123\verb|_|456,789；
+    \item 表示时间、经纬度、坐标，例如：À 9\verb|_|h\verb|_|14\verb|_|min\verb|_|23\verb|_|s, il naviguait par $10°$\verb|_|$20'$\verb|_|$30''$ de latitude\verb|_|N.（9时14分23秒，他在北纬$10°\ 20'\ 30''$航行。）关于\emph{度}，参见注释
+        \footnote{注意度的写法：角度$10°$、温度10\texttt{\_}℃。}
+    ；
+    \item 在表示序号的字数、数字及其后元素之间：Il y a deux cas\verb|_|: a)\verb|_|la fonction est récursive ou b)\verb|_|elle ne l’est pas. Nous allons voir 1$^{\rm o}$\verb|_|la fonction de Dirac et 2$^{\rm o}$\verb|_|le théorème de Schwartz.（有两种情况：a)\verb|_|该函数是循环的；b)\verb|_|该函数不是循环的。第一种称为迪拉克函数，第二种称为施瓦茨定理。）
+\end{itemize}
+
+\section{标点符号的作用}
+
+正如前文所述，作者在文章中输入标点符号的方式是排印差错（如留白错误）的一大来源，但这种差错也会影响文本的理解，其中数逗号带来的问题最为典型。例如，请比较以下两个句子：
+
+\begin{quote}
+    Les étudiants de maîtrise qui ne suivront pas le cours du professeur Transen auront une séance supplémentaire d’analyse des données mardi prochain.
+    \begin{bil}
+        不参加特航桑教授课程的硕士生下周二将参加额外的数据分析会议。
+    \end{bil}
+
+    Les étudiants de maîtrise, qui ne suivront pas le cours du professeur Transen, auront une séance supplémentaire d’analyse des données mardi prochain.
+    \begin{bil}
+        硕士生啊，他们不参加特航桑教授的课程，他们下周二将参加额外的数据分析会议。
+    \end{bil}
+\end{quote}
+
+对于第一种情况，仅有那些不去特航桑教授课程的人才会参加额外会议。对于第二种情况，一方面，没有学生会去参加特航桑教授的课程，另一方面，所有人都要参加额外的会议。
+
+这里不想为大家上一整节语法课或语体课（尤其是讲逗号的作用），因此给出几条足以应对大多数情况的注意事项。参见\ref{ref15}%TODO
+。
+
+\subsection{句点}
+
+这是表示句子结束的正常标识，没什么太多可说的，只需要强调：
+
+\begin{itemize}
+    \item 需要避免使用太长的句子；
+    \item 从排印学层次来讲：
+    \begin{itemize}
+        \item 句点后需要带有一个普通空格（用英文打字时是两个）；
+        \item 标题末尾不加句点（标题不是句子）。
+    \end{itemize}
+\end{itemize}
+
+\subsection{冒号}
+
+冒号“:”用于引出紧随的句子。
+
+\begin{itemize}
+    \item 通常，冒号后紧随一个普通空格；但为了不将内容甩到行首，我们通常使用不可断空格：“mmm\verb|_|:\verb*+ +mmm”。
+    \item 当引用内容由若干句子构成时，经常将引用内容置于引号间，且每个句子开头使用大写字母。否则，冒号后的内容一般不用大写。举例：
+    
+    \begin{quote}
+        Il y a deux cas : le premier... ; le second..
+        
+        Pendibidu a conclu : « Bien que... normal. » Nous faisons notre...
+
+        \begin{bil}
+            由两种情况：第一……；第二……
+
+            庞迪毕居总结道：“尽管……正常。”我们……
+        \end{bil}
+    \end{quote}
+\end{itemize}
+
+\subsection{分号}
+
+尽管卡瓦纳写了很多反对使用分号的好文章，但法文中的分号比英文中的作用更丰富。分号连接的两个内容足够相关，以至于可以作为句子中的单一陈述，却也有足够的区别，足以称为两个不同的部分。
+
+在排印学中，分号还有分隔列表中非整句的元素的作用（如上文\ref{sec5.2.1}小节中列表中第一个元素的末尾）。
+
+注意：分号前需要插入狭窄的不可分空格。
+
+\subsection{逗号}
+
+对于一些科技文章作者来说，逗号带来了铺天盖地的麻烦。更准确地说，一些作者不正确地使用标点符号，给读者增添了铺天盖地的麻烦……然而，经过大幅简化，逗号的作用可以总结为两种情况。即使这种简化可能过于激进，我仍然相信逗号的这两个作用况足以覆盖绝大多数情况。
+
+\paragraph{列表分隔符} 列表是一系列（大于一个）具有相同本质（形容词、表语、动词等）的元素。基本原则是将逗号用于相邻元素间，直到倒数第二个元素和最后一个元素之间，并在这里使用“et”（和）
+    \footnote{相对地，英文只在仅含两个元素的列表中使用“\emph{and}”，对于超过两个元素的列表，则会在最后两个元素间使用“, \emph{and}”：$I_1$ \emph{and} $I_2$；$I_1, I_2, ... , I_{n-1}$, \emph{and} $I_n$。例如，在参考文献中：
+    \begin{itemize}
+        \item Thompson and Thomson, “A new case...”, ...
+        \item Thompson, Thomson, and Thorson, “Another case...”, ...
+    \end{itemize}
+    }
+。
+
+\begin{mdframed}
+    \subsubsection*{逗号：列表分隔符}
+
+    \noindent 两个元素：<元素1> et <元素2>
+
+    \noindent 三个元素：<元素1>, <元素2> et <元素3>
+
+    \noindent $N$个元素：<元素1>, <元素2>, ... , <元素$N-1$> et <元素$N$>
+\end{mdframed}
+
+即使“etc.”是\emph{et cætera}（等等）的缩写，它也\emph{总是}带有逗号。因此，由“etc.”结尾的列表实际上应当由“, etc.”结尾（这里偏向使用“,\verb|_|etc.”，正如第\ref{p33}%TODO
+所展示的）。
+
+举例如下：
+
+\begin{quote}
+    Le projet a des relations suivies avec l’université de Fribourg et l’uni- versité de Neuchâtel. Des relations sont en cours d’établissement avec les universités de Lausanne, Bâle et Gruyère ainsi qu’avec les écoles polytechniques fédérales de Lausanne, Zürich, Lugano et Pully.
+
+    Durant l’année 1989, on a étudié les méthodes de quantification vec- torielle adaptative et la compensation du mouvement sur un canal à bande réduite. En 1990, nous prévoyons de traiter l’approximation polygonale d’images contours, l’estimation des segments dynamiques, la reconstruction des segments en coordonnées plückeriennes et l’identification des polygones 3D par une méthode générale.
+
+    Jean Transen a visité les universités de Caroline du Nord, du Sud, de l’Ouest, etc.
+
+    \begin{bil}
+        该项目与弗里堡大学和纳沙特尔大学保持着持续的关系。目前正在与洛桑、巴塞尔和格鲁埃本科以及洛桑、苏黎世、卢加诺和普利的联邦理工学院建立关系。
+
+        1989年，研究了自适应矢量量化方法和窄带信道上的运动补偿。1990年，我们计划使用通用方法处理轮廓图像的多边形近似、动态段估计、普吕克坐标段重建和3D多边形识别。
+
+        让·特航桑访问了北卡罗来纳州、南卡罗来纳州和西卡罗莱纳州等地的大学。
+    \end{bil}
+\end{quote}
+
+注意：
+
+\begin{enumerate}
+    \item 在文学作品中，经常有将“et”替换为逗号的情况：L’attelage suait, soufflait, crachait.（马车出汗、喘气、嘎吱作响。）此外，当句子过长时，有时可以使用“, et”，尤其是连词“et”已经在列表元素中出现时：Nous nous intéressons à deux points essentiels : la décomposition pyramidale qui est évaluée en termes d’entropie, de complexité et de qualité de reconstruction, et l’emploi d’algorithmes multigrilles.（我们对两个关键点感兴趣：根据熵、复杂性和重建质量评估的锥体分解，以及使用多网格算法。）
+    \item “et”的使用方法同样适用于“ou”（或），通常也适用于“ni”（也非）。
+\end{enumerate}
+
+\paragraph{起到括号的作用}
