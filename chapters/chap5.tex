@@ -265,4 +265,113 @@
     \item “et”的使用方法同样适用于“ou”（或），通常也适用于“ni”（也非）。
 \end{enumerate}
 
-\paragraph{起到括号的作用}
+\paragraph{充当括号}
+
+逗号也可以充当括号来使用。因此，如下两个句子是等价的：
+
+\begin{quote}
+    这些信息（即标签+标识符）足以……
+
+    这些信息，即标签+标识符，足以……
+\end{quote}
+
+这里不要推广得太远，以下两个句子也是等价的：
+
+\begin{quote}
+    Nous démarrons, par ailleurs, une réflexion sur l’intégration de toutes les techniques qui, d’une part, ...
+
+    \begin{bil}
+        此外，一方面，我们启动了对整合所有技术的思考……
+    \end{bil}
+
+    Nous démarrons (par ailleurs) une réflexion sur l’intégration de toutes les techniques qui (d’une part) ...
+
+    \begin{bil}
+        我们（此外）（一方面）启动了对整合所有技术的思考……
+    \end{bil}
+\end{quote}
+
+\begin{mdframed}
+    \subsubsection*{逗号充当括号}
+
+    \begin{tabular}{rcl}
+        Xxxx (mmmmmmm) yyy. & = & Xxx, mmmmmmm, yyy.\\
+        mmm. (Mmm) xxxxx. & = & mmm. Mmm, xxxxx.\\
+        Xxxx (mmmmmm). Mmm & = & Xxxx, mmmmmm. Mmm
+    \end{tabular}
+\end{mdframed}
+
+这里说的充当括号，是指：
+
+\begin{itemize}
+    \item 用于从句，例如：
+    \begin{quote}
+        若将相关成分记为$C$，由欧拉公式得……
+
+        我们将每个处理器，在保证功能同步的情况下，都连接到一个缓冲器……
+    \end{quote}
+    \item 用于插入语，例如：
+    \begin{quote}
+        Ada语言，一种古早的编程语言，是……
+
+        Oda，全称为\emph{Office Document Architecture}，是一个范式……
+    \end{quote}
+    \item 作为空间、时间上或出于平衡考虑的一种指示。此外，一些连词也可以置于两个逗号之间。例如：
+    \begin{quote}
+        对于身份识别的情况，我们尝试证明……
+
+        On a, d’une part, une union finie de courbes de Jourdan et, d’autre part, une union finie de régions simplement connexes.
+        \begin{bil}
+            我们一方面有一个若尔当曲线的有限并集，另一方面有一个简单相连区域的有限并集。
+        \end{bil}
+
+        因此，可以说……
+
+        当然，我们没有理由……
+
+        On ne connaît pas, aujourd’hui, de solution...
+        \begin{bil}
+            今天，我们还不知道解决方案……
+        \end{bil}
+    \end{quote}
+\end{itemize}
+
+\subsubsection{注意}
+
+\begin{itemize}
+    \item 我们不能给出诸如“\emph{et}前不能加逗号”这样的规则，因为以上两种作用可能会同时存在，尤其是并列连词本身也具有强调意义（并且$=$此外）：“我们可以这样做，并且我们已经这样做了，……”
+    \item 关系从句不加逗号（除非作为插入语）：
+    \begin{quote}
+        Les forces qui engendrent cet effet sont de nature...
+        Les forces, qui engendrent cet effet, sont de nature...
+        \begin{bil}
+            产生这种效果的力本质上是……
+        \end{bil}
+    \end{quote}
+    \item 如果删除充当括号的逗号和用于列表的逗号，那么主语和谓语之间不应当还有任何逗号残留。
+\end{itemize}
+
+\subsection{使用句号、引号或意大利体}
+
+插入语中间或后边用什么标点符号？原则是，如果标点符号属于插入语（比如引用句子），那么处理它的方式和插入语的其他部分相同：放入引号间或使用意大利体。此外，应用相连标点符号的收缩规则（见表\ref{tab1}%TODO
+）时不考虑这些标记（如意大利体的末尾或结束引号）。有以下几个示例：
+
+\begin{description}
+    \item[错误：] Pendibidu demanda : \emph{La clause de Horn est-elle toujours valide ?}. Il répondit \emph{Non !}. Mais...
+    \item[正确：] Pendibidu demanda : \emph{La clause de Horn est-elle toujours valide ?} Il répondit \emph{Non !} Mais...
+    \item[错误：] Pendibidu demanda : « La clause de Horn est-elle toujours valide~?~». Il répondit « Non ! ». Mais...
+    \item[正确：] Pendibidu demanda : « La clause de Horn est-elle toujours valide~?~» Il répondit « Non ! » Mais...
+\end{description}
+
+\begin{bil}
+    \begin{description}
+        \item[错误：]  庞迪毕居问道：\emph{Horn子句仍然有效吗？}。他回答\emph{不是！}。但……
+        \item[正确：] 庞迪毕居问道：\emph{Horn子句仍然有效吗？}他回答\emph{不是！}但……
+        \item[错误：] 庞迪毕居问道：“Horn子句仍然有效吗？”。他回答“不是！”。但……
+        \item[正确：] 庞迪毕居问道：“Horn子句仍然有效吗？”他回答“不是！”但……
+    \end{description}
+\end{bil}
+
+\subsection{不要滥用}
+
+最后一条注意事项：标点符号有点像编程中括号的作用（尤其是对于Lisp语言来说），但人类没法适应过多层级的递归。请使用短句，不要在同一句话里表达过多内容。请想起你的读者，不论用什么方式，阅读你的文字都是一件苦差事（\emph{语自}高德纳[Donald Knuth]）。
