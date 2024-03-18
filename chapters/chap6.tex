@@ -27,3 +27,48 @@
 
 \section{设置参考}
 
+应用或给出参考资料的方式取决于期刊、图书、记录等的具体要求，无论针对纸质文件还是电子文件。需要遵守出版商给出的“作者手册”（如\emph{TSI}的手册为http://tsi.e-revues.com/）。总体来说，有两种方法。
+
+\begin{enumerate}
+    \item 第一种方法主要用于人文学科。这种方法要求将参考文献放在注释中（如置于页脚、侧栏，或在作品末尾重新分组列出）。这种方法可以将评论和参考的作用结合，当注释内容在页脚或侧栏时，我们可以立刻去参考它们，而不用去翻阅文章的其余部分（或直接点击跳转）。但当我们想要多次引用同一个资料却不想每次都重复时，我们就会使用一套相当抽象的话术，包含\emph{op. cit.}（同前）、\emph{id.}（同上）、\emph{ibid.}（同上上，若使用\emph{idem}则是\emph{ibidem}）等。这里有一个典型的注释
+        \footnote{[摘自Anthony \textsc{Grafton}的\emph{Les origines tragiques de l’érudition – une histoire de la note en bas de page},Le Seuil出版社, 巴黎, 1998, 注释8, 第194页] H.E. Davis, BA, \emph{An Examination of the Fifteenth and Sixteenth Chapters of Mr Gibbon’s History of the Decline and Fall of the Roman Empire}, 伦敦, 1778年, 第\textsc{ii}页（由Gibbon引用，其画线于\emph{Miscellaneous Works}, 版本为John, lord Sheffield, 伦敦, 1814年, IV, 第523页）。Gibbon在其\emph{ Mémoires}中写道，Davis“声称攻击的不是信仰，而是历史学家的诚信”（\emph{op. cit.}, 第160页）。}
+    。
+    \item 在计算机科学中，往往使用第二种方法，即在正文中指出参考，并且在文章或作品的末尾重新组织这些参考资料（由第一作者字母序、日期顺序、引用顺序等顺序排列）。指出参考的方式可以是置于括号或引号中、使用上标等，表达方式可以是使用序号、缩写、全名……有时会精确到具体页。这种方式使得我们可以毫无困难地在列表中找到它。举例如下：
+    
+    \begin{quote}
+        (PEN82)[Pendibidu][Pen82a, 第124页]，mm$^{\rm pen82}$或像这样[4%TODO
+        ]等。这些属于具体要求的范畴，我们不再探讨。
+    \end{quote}
+\end{enumerate}
+
+\section{参考资料的标签}
+
+无论是位于页脚还是全文末尾，参考资料都应遵循一定的用法，没有统一的范式
+    \footnote{特别需要注意，在论文中编写参考文献跟在图书馆编写索引卡（或说明书等）是不同的，后者有范式（如Afnor Z），并且这些范式对于出版来说太过贫乏。}
+，只有适合某家期刊或某家出版社的“做法”。我们需要遵循出版社的要求，但总体来说，有一些原则是通用的。
+
+\begin{mdframed}
+    基本原则如下：
+    \begin{itemize}
+        \item 作者名使用小型大写字母；
+        \item 作品名使用意大利体，根据具体的情况，作品可能是书、论文、作品集（如研究报告集）、会议记录；
+        \item 对于文章标题或数中的章节，置于引号之间；
+        \item 用罗马体标识其他有用的信息（出版商、出版地、日期、卷、序号、页码等，不要忘记，现在还可能有\emph{网址}）。
+    \end{itemize}
+\end{mdframed}
+
+参考资料可以看作由一串结构化的元素串联而成，其中的每个元素都有特定的格式。事实上，一些排版工具就是这样工作的
+    \footnote{比如需要搭配\LaTeX 使用的Bib\TeX（http://www.loria.fr/services/ctan/）。还有一些排版工具可供使用，比如Framemaker，甚至是一些XML产品。思路是只选取对当前正在编写的文章有用的参考资料，将它们编译成一个参考资料数据库。遵循这样的思路，后文\ref{sec6.2.1}%TODO
+    小节中提到的图书可以这样定义：\\
+    {\ttfamily 
+    @BOOK\{nebut-unix\}\\
+    author= "Jean-Louis Nebut"\\
+    title = "UNIX pour l'utilisateur. Commandes et langages de commande"\\
+    publisher="éditions Technip" place="Paris" date="1990" pagenumber="305".\\
+    }
+    这是根据文档所需的具体要求来组织的。}
+。这样一来，产生排版错误的可能性就很小了。
+
+以下是引用一些基本文档类型的示例。
+
+\subsection{图书}
