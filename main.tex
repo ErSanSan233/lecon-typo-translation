@@ -1,26 +1,53 @@
 \documentclass{ctexbook}
+\usepackage[
+    paperwidth=185mm,
+    paperheight=260mm,
+    margin=25mm,
+    top=30mm]{geometry}
 \usepackage{footnote}
 \usepackage{graphicx}
 \usepackage{mdframed}
 \usepackage{enumitem}
+\usepackage{tocloft}
+\usepackage{fancyhdr}
+
+% \usepackage{tgpagella}
+% \usepackage[U]{fontenc}
 
 \usepackage{lecon-typographie}
+% \usepackage{babel}
 
-\renewcommand{\labelitemi}{---}
-\renewcommand{\labelitemii}{---}
+\CTEXsetup[number={\arabic{chapter}}]{chapter}
+\setlength{\headheight}{13pt}
 
-\title{法文排印小课堂 \\（原书1990—2020年8月1日PDF版）}
-\author{雅克·安德烈（Jacques André） \enspace 著}
-\date{}
+\pagestyle{fancyplain}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhf{}
+\fancyhead[LE, RO]{\thepage}
+\fancyfoot{}
+
+\fancypagestyle{plain}{
+\fancyhead{}
+\fancyfoot{}
+}
 
 \begin{document}
-\maketitle
 
+\frontmatter
+\maketitle
+\input{chapters/avertissement}
+
+\mainmatter
 \input{chapters/chap1}
 \input{chapters/chap2}
 \input{chapters/chap3}
 \input{chapters/chap4}
 \input{chapters/chap5}
 \input{chapters/chap6}
+\input{chapters/chap7}
+\input{chapters/chap8}
+
+\backmatter
+\input{chapters/sommaire}
 
 \end{document}
