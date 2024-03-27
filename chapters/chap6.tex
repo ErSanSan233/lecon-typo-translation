@@ -1,6 +1,4 @@
-\chapter{参考资料：请认真参考}
-
-\label{chap6}
+\chapter{参考资料：请认真参考}\label{chap6}
 
 参考资料是论文稿件、提交到期刊及现在提交到\emph{网络}平台的稿件中恒久远的错误来源。因此这里有一些用于避免大多数错误的原则。
 
@@ -27,7 +25,7 @@
 
 \section{设置参考}
 
-应用或给出参考资料的方式取决于期刊、图书、记录等的具体要求，无论针对纸质文件还是电子文件。需要遵守出版商给出的``作者手册''（如\emph{TSI}的手册为http://tsi.e-revues.com/）。总体来说，有两种方法。
+应用或给出参考资料的方式取决于期刊、图书、记录等的具体要求，无论针对纸质文件还是电子文件。需要遵守出版商给出的``作者手册''（如\emph{TSI}的手册为 \link{http://tsi.e-revues.com/} ）。总体来说，有两种方法。
 
 \begin{enumerate}
     \item 第一种方法主要用于人文学科。这种方法要求将参考文献放在注释中（如置于页脚、侧栏，或在作品末尾重新分组列出）。这种方法可以将评论和参考的作用结合，当注释内容在页脚或侧栏时，我们可以立刻去参考它们，而不用去翻阅文章的其余部分（或直接点击跳转）。但当我们想要多次引用同一个资料却不想每次都重复时，我们就会使用一套相当抽象的话术，包含\emph{op. cit.}（同前）、\emph{id.}（同上）、\emph{ibid.}（同上上，若使用\emph{idem}则是\emph{ibidem}）等。这里有一个典型的注释
@@ -58,8 +56,7 @@
 \end{mdframed}
 
 参考资料可以看作由一串结构化的元素串联而成，其中的每个元素都有特定的格式。事实上，一些排版工具就是这样工作的
-    \footnote{比如需要搭配\LaTeX 使用的Bib\TeX（http://www.loria.fr/services/ctan/）。还有一些排版工具可供使用，比如Framemaker，甚至是一些XML产品。思路是只选取对当前正在编写的文章有用的参考资料，将它们编译成一个参考资料数据库。遵循这样的思路，后文\ref{sec6.2.1}%TODO
-    小节中提到的图书可以这样定义：\\
+    \footnote{比如需要搭配\LaTeX 使用的Bib\TeX（\link{http://www.loria.fr/services/ctan/}）。还有一些排版工具可供使用，比如Framemaker，甚至是一些XML产品。思路是只选取对当前正在编写的文章有用的参考资料，将它们编译成一个参考资料数据库。遵循这样的思路，后文 \ref{sec6.2.1}~小节中提到的图书可以这样定义：\\
     {\ttfamily 
     @BOOK\{nebut-unix\}\\
     author= "Jean-Louis Nebut"\\
@@ -71,7 +68,7 @@
 
 以下是引用一些基本文档类型的示例。
 
-\subsection{图书}
+\subsection{图书}\label{sec6.2.1}
 
 我们认为图书标题可以看作作品，因此使用意大利体。
 
@@ -100,7 +97,7 @@
 组成作品的应当是会议记录（因此会议记录标题为意大利体）。
 
 \begin{quote}
-    Bertrand \textsc{Coüasnon} and Ivan \textsc{Leplumey}, ``A Generic Recognition System for Making Archives Documents Accessible to Public'', \emph{Proceedings of the Seventh International Conference on Document Analysis and Recognition (ICDAR'2003)}, (Apostolos Antonacopoulos ed.), IEEE Society, August 2003, p. 228-229; <http://csdl.computer.org/dl/proceedings/icdar/2003/1960/01/\linebreak1960010228.pdf>.
+    Bertrand \textsc{Coüasnon} and Ivan \textsc{Leplumey}, ``A Generic Recognition System for Making Archives Documents Accessible to Public'', \emph{Proceedings of the Seventh International Conference on Document Analysis and Recognition (ICDAR'2003)}, (Apostolos Antonacopoulos ed.), IEEE Society, August 2003, p. 228-229; <\linkk{http://csdl.computer.org/dl/proceedings/icdar/2003/1960/01/1960010228.pdf}{http://csdl.computer.org/dl/proceedings/\\icdar/2003/1960/01/1960010228.pdf}>.
 \end{quote}
 
 \subsection{内部报告}
@@ -132,7 +129,7 @@
     \item 可以在参考资料中使用约定俗成的缩写，无论是期刊名（如\emph{Journal of the Association of Computing Machinery}缩写为\emph{J. ACM}、\emph{Lecture Notes in Computer Science}缩写为\emph{LNCS}）还是对期刊结构的引用（如chap.、vol.、p.、etc.）。结构的引用有时可以省略，因为可以根据上下文猜测（如1998, 6, 2, 12-23代表1998年第6卷第2期的12至23页）。
     \item ``页''的复数缩写是``p.''（英文为``pp.''），我们使用短横杠来分隔页码，如``p. 12-34''（英文中横杠略长，如``pp. 12--34''）。
     \item 最好遵循我们要引用出版物的所使用的语言的正字法，但法文出版物不会在参考资料中将外来术语设置为意大利体（除了作品名）。
-    \item 如果要引用电子文章，不仅需要给出其\emph{URL}，还要给出作者名、页面标题等，如参见第\ref{page47}页的参考资料\ref{ref9}。%TODO
+    \item 如果要引用电子文章，不仅需要给出其\emph{URL}，还要给出作者名、页面标题等，如参见第~\pageref{ref9}~页的参考资料~\ref{ref9} 。
 \end{itemize}
 
 \section{法文标题和外国出版物}
@@ -154,7 +151,7 @@
 \begin{description}
     \item[{[Montagné70]}] \textsc{Montagné} J., \emph{Théorie des graphes}, Dunœ ud, Paris, 1970.\\
     没有任何理由来将其翻译成英文。
-    \item[{[Adore90]}] \textsc{Adore}, \emph{PreCursiv Reference Manual}, Adidas-Voley, Writing, 1990. \{Traduit en français : \emph{Manuel de référence du langage PreCursiv}, Dunœud éd., Paris, 1991.\}\\
+    \item[{[Adore90]}] \textsc{Adore}, \emph{PreCursiv Reference Manual}, Adidas-Voley, Writing, 1990.\linebreak \{Traduit en français : \emph{Manuel de référence du langage PreCursiv}, Dunœud éd., Paris, 1991.\}\\
     我们充分尊重了原作品，且使用法语的读者可以很方便地看到它的法文翻译。
     \item[{[Transen92]}] \textsc{Transen} J., « $\alpha$-laval results on the 887th leg of the centipede », \emph{Intern. Journal of Comput. Sc.}, 24, 8, 12–34, 1992. {voir aussi : « Résultats du test $\alpha$-laval sur la 887$^{\rm e}$ patte du mille-pattes », \emph{Publication interne de l'uPs}, n$^{\rm o}$ 98, juin 1991.}\\
     实际上，法国人发表的很多英文文章事先都有法文版本。所以，在引用它们时，也带上法文版本来为读者带来更好的阅读体验吧！

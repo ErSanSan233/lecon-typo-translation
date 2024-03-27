@@ -10,12 +10,21 @@
 \usepackage{enumitem}
 \usepackage{tocloft}
 \usepackage{fancyhdr}
-
-% \usepackage{tgpagella}
-% \usepackage[U]{fontenc}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{pdfpages}
+\usepackage{emptypage}
 
 \usepackage{lecon-typographie}
-% \usepackage{babel}
+
+\hypersetup{
+    colorlinks = true,
+    linkcolor = brown,
+    urlcolor = brown
+}
+
+\newcommand{\link}[1]{{\href{#1}{\texttt{#1}}}}
+\newcommand{\linkk}[2]{{\href{#1}{\texttt{#2}}}}
 
 \CTEXsetup[number={\arabic{chapter}}]{chapter}
 \setlength{\headheight}{13pt}
@@ -31,10 +40,26 @@
 \fancyfoot{}
 }
 
+\title{\lecon}
+\author{雅克·安德烈（Jacques André） \enspace 著}
+\date{\vfill\begin{flushright}
+    原书1990版—构建日期：2020年8月1日\\
+    \href{http://jacques-andre.fr/faqtypo/lessons.pdf}{http://jacques-andre.fr/faqtypo/lessons.pdf}\\
+    ~\\
+    计算机科学和随机系统研究所（IRISA）\\
+    \href{http://jacques-andre.fr/ed/}{Éditions du jobet}\\
+    ~\\
+    翻译日期：\today
+\end{flushright}}
+
 \begin{document}
 
+\cleardoublepage
+
 \frontmatter
+\includepdf{img/cover.pdf}
 \maketitle
+\input{chapters/a-note}
 \input{chapters/avertissement}
 
 \mainmatter
