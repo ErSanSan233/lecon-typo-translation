@@ -17,6 +17,13 @@
 
 \usepackage{lecon-typographie}
 
+% How to avoid footnote number restarts from 1 each chapter? : https://tex.stackexchange.com/questions/344846/how-to-avoid-footnote-number-restarts-from-1-each-chapter
+\usepackage{remreset}
+\makeatletter
+\@removefromreset{footnote}{chapter}
+\newcommand\footnoteref[1]{\protected@xdef\@thefnmark{\ref{#1}}\@footnotemark}
+\makeatother
+
 \hypersetup{
     colorlinks = true,
     linkcolor = brown,
@@ -43,7 +50,7 @@
 \title{\lecon}
 \author{雅克·安德烈（Jacques \textsc{André}） \enspace 著}
 \date{\vfill\begin{flushright}
-    原书1990版—构建日期：2020年8月1日\\
+    原书1990版—构建日期：\origindate\\
     \href{http://jacques-andre.fr/faqtypo/lessons.pdf}{http://jacques-andre.fr/faqtypo/lessons.pdf}\\
     ~\\
     计算机科学和随机系统研究所（IRISA）\\
